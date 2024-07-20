@@ -14,8 +14,6 @@ import org.springframework.web.client.RestTemplate;
 @RequiredArgsConstructor
 public class Controller {
 
-
-
     private final ServicePerson servicePerson;
 
     @GetMapping("/getPerson/{number}")

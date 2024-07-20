@@ -3,19 +3,21 @@ package com.example.contacts.service;
 import com.example.contacts.dto.PersonDto;
 import com.example.contacts.mapper.PersonMapper;
 import com.example.contacts.person.PersonEntity;
+import lombok.extern.slf4j.Slf4j;
+import lombok.extern.slf4j.XSlf4j;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
 
-
 @Service
 public class ServicePerson {
+
 
     List<PersonEntity> persons = new ArrayList<>(
             List.of(
                     PersonEntity.builder()
-                            .number("123456")
+                                .number("123456")
                             .age(1)
                             .address("mirdamad")
                             .name("jadi")
